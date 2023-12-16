@@ -2,13 +2,13 @@
 Data Science Internship at Prodigy Infotech Task 01
 import matplotlib.pyplot as plt
 
-# Example data for age distribution
-age_groups = ["0-17", "18-24", "25-34", "35-44", "45-54", "55-64", "65+"]
-age_percentages = [20, 15, 22, 18, 12, 10, 3]
+# Data for age distribution in world population
+age_groups = ["0-14", "15-64", "65+"]
+age_percentages = [25, 65, 10]
 
-# Create a bar chart
-plt.figure(figsize=(8, 6))
-plt.bar(age_groups, age_percentages, color=['skyblue', 'lightgreen', 'orange', 'purple', 'gold', 'red', 'gray'])
+# bar chart
+plt.figure(figsize=(5, 6))
+plt.bar(age_groups, age_percentages, color=['orange', 'purple', 'red'])
 plt.xlabel("Age Groups")
 plt.ylabel("Percentage of Population")
 plt.title("Age Distribution of a Population")
@@ -19,13 +19,13 @@ plt.tight_layout()
 # Display the bar chart
 plt.show()
 
-# Example data for gender distribution
+# Data for gender distribution in world population
 gender_labels = ["Male", "Female", "Non-binary"]
-gender_counts = [600, 400, 50]
+gender_percentage = [49.7, 50, 0.03]
 
-# Create a histogram
+# histogram
 plt.figure(figsize=(6, 6))
-plt.hist(gender_labels, bins=3, edgecolor='black')
+plt.hist(gender_percentage, bins=3, edgecolor='black')
 plt.xlabel("Gender")
 plt.ylabel("Number of People")
 plt.title("Gender Distribution of a Group")
